@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+
+  header {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+
+  .form-container, .todo-container {
+    flex: 1 1 350px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid cyan;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+  }
+
+  input, textarea, button {
+    display: block;
+    margin: 12px auto;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #aaa;
+  }
+
+  input:focus, textarea:focus {
+    border-color: white;
+    box-shadow: 0 0 10px cyan;
+  }
+
+  button {
+    width: 50%;
+    padding: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 15px cyan;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid cyan;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .delete-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea, button {
+      width: 90%;
+    }
+
+    li {
+      width: 90%;
+    }
+
+    button {
+      width: 60%;
+    }
+  }

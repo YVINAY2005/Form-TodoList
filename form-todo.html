@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & To-Do</title>
+  <link rel="stylesheet" href="form-todo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Page</h1>
+  </header>
+
+  <div class="container">
+    <!-- Contact Form -->
+    <form id="contactForm" class="form-container">
+      <h2>Contact Form</h2>
+      <input type="text" id="fullName" placeholder="Full Name" />
+      <input type="email" id="email" placeholder="Email Address" />
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- To-Do List -->
+    <div class="todo-container">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter a task..." />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="todoList"></ul>
+    </div>
+  </div>
+
+  <script src="form-todo.js">
+    
+    
+  </script>
+
+</body>
+</html>
